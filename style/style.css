@@ -1,0 +1,397 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+      height: 100%;
+  }
+
+  body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+  }
+
+  /* .checks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    } */
+
+
+.box {
+    align-items: center;
+    border: 1px solid darkgray;
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    margin: -5px;
+    text-align: center;
+    width: 80px;
+}
+
+.row {
+    text-align: center;
+    margin: 0px;
+}
+form.index {
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-evenly;
+    /* height: 150px; */
+}
+/* .index .categories_checkboxes {
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+} */
+.index .checks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.busqueda {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.scan input {
+    height: 47px;
+    width: 400px;
+}
+
+.box_scan {
+    border: 1px solid darkgray;
+    background-color: gray;
+}
+
+/* ---------   CARDS      ----------- */
+
+/* .cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cards .card_info {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+#id_cards {
+    border: none;
+}
+
+#principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 20%;
+    margin: 0 1rem;
+}
+
+.card_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.card .my-3 {
+      width: 100px;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:500px) {
+    .card {
+        align-items: center;
+        margin: 0 1rem;
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width:501px) and (max-width:767px) {
+    .card {
+        align-items: center;
+        margin: 0 1rem;
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width:767px) and (max-width:1220px) {
+    .card {
+        align-items: center;
+        margin: 0 1rem;
+        width: 40%;
+    }
+}
+
+/* -------------    FOOTER      ---------------- */
+
+footer {
+    margin-top: auto;
+
+}
+
+footer .row {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    height: 40px;
+}
+
+footer .row .col-2{
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer .row .col-5{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* --------------      Details Card        --------------- */
+
+
+
+.details > .mb-3 {
+    align-items: center;
+    display: flex;
+    padding: 5px;
+    height: 480px;
+    justify-content: center;
+    border: 0;
+}
+
+.details > .mb-3 img {
+    border: 2px solid darkgray;
+    padding: .65rem;
+}
+
+.details .row {
+    /* width: 605px; */
+    border: 2px solid darkgray;
+    display: flex;
+    padding: 5px;
+}
+
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.25rem 0.25rem;
+}
+
+.details .card-body {
+    width: 300px;
+    border: 2px solid darkgray;
+}
+
+.details .card {
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------------  Contact  ----------------- */
+
+.form2 {
+    display: flex;
+    justify-content: center;
+}
+
+form.contacto > .mb-3 {
+    width: 100%;
+}
+
+form.contacto > .mb-3 textarea {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+form.contacto {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+form.contacto .mb-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto .btn {
+    /* background-color:red; */
+    position: relative;
+    right:-320px;
+    bottom: 5px;
+}
+
+
+/* ------------      Stats         ----------- */
+
+.table-responsive .table-success{
+    font-weight: bold;
+    text-align: center;
+}
+
+@media only screen and (min-width:320px) and (max-width:500px) {
+    form.index {
+        flex-direction: column;
+        align-items: center;
+    }
+    .busqueda {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .busqueda input {
+        width: 330px;
+    }
+
+    /* .checks {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    } */
+    .checks {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .index .form-check {
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+
+    .details .card {
+        align-items: center;
+    }
+
+    .details .row {
+        width: 320px;
+        border: 2px solid darkgray;
+        display: block;
+        padding: 5px;
+    }
+
+    form.contacto {
+        width: 365px;
+    }
+
+    form.contacto .btn {
+        right: -290px;
+    }
+}
+
+@media only screen and (min-width:501px) and (max-width:767px) { /*720*/
+    form.index {
+        flex-direction: column;
+        align-items: center;
+    }
+    .busqueda {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+    }
+
+    .scan {
+        width: 100%;
+    }
+
+    .busqueda input {
+        width: 100%;
+    }
+
+    /* .checks {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    } */
+    .checks {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .form-check {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .details .col-md-6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.25rem 0;
+        width: 305px;
+    }
+
+    .details .card {
+        align-items: center;
+    }
+
+    .details .row {
+        width: 320px;
+        border: 2px solid darkgray;
+        display: block;
+        padding: 5px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1220px) {
+    form.index {
+        flex-direction: row;
+        align-items: center;
+    }
+    .busqueda {
+        display: flex;
+        flex-direction: row;
+        width: 33%;
+    }
+
+    .scan {
+        width: 100%;
+    }
+
+    .busqueda input {
+        width: 100%;
+    }
+
+    /* .checks {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    } */
+    .checks {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .checks .form-check{
+        margin-left: 0.2rem!important;
+        margin-right: 0.2rem!important;
+    }
+
+    .details .card {
+        align-items: center;
+    }
+
+}
